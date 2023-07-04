@@ -1,0 +1,109 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1f1c26;
+  font-family: 'Palatino Linotype';
+}
+
+img {
+  width: 100%;
+  float: left;
+}
+
+.container {
+  width: 65%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainHeader {
+  text-align: center;
+  font-size: 2.3em;
+  background-position: center center;
+  color: #9c8dbf;
+}
+
+#mainNav {
+  color: #707070;
+}
+
+#mainNav ul {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+#mainNav li {
+  display: inline;
+  padding: 20px 10px;
+  margin: 10px;
+}
+
+#mainNav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+
+#mainNav li:hover {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#mainFooter {
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  bottom: 5px;
+  position: absolute;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#mainFooter a {
+  color: #aaa;
+}
+
+#main {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+#right {
+  float: right;
+  width: 40%;
+  box-sizing: border-box;
+  color: #9c8dbf;
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 30px 0 30px 0;
+}
+
+#left {
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+  margin: 30px 0 30px 0;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  #right,
+  #left {
+    float: none;
+    width: 100%;
+  }
+}
