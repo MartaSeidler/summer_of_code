@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: 'Raleway', sans-seriff;
+}
+
+article {
+  padding: 0 1em;
+}
+
+section {
+  margin: 1em;
+  padding: 1em;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  width: 150px;
+  border-radius: 75px;
+}
+
+h1 {
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.icons {
+  font-size: 22px;
+}
+
+.icons .fa-brands {
+  padding: 0.4em;
+}
+
+.course {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.course .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.course .description {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66%
+}
+
+.course .description p {
+  padding-left: 1em;
+  ;
+}
+
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skills .column ul {
+  list-style-type: none;
+}
+
+.skills .column ul>li:before {
+  content: '►';
+  color: #509e98;
+  padding: 0.5em;
+}
+
+.skills .language ul {
+  list-style-type: none;
+}
+
+.school {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.school span {
+  color: #A7B8BF;
+}
+
+.school .title {
+  text-transform: capitalize;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.school .description {
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%
+}
+
+.experience {
+  padding-bottom: 0.8em;
+}
+
+.experience span {
+  color: #A7B8BF;
+}
+
+.experience .title {
+  text-transform: capitalize;
+
+}
+
+.experience ul {
+  list-style-type: none;
+}
+
+.experience li:before {
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+  padding: 1em;
+  text-align: right;
+  background-color: #78b5b0;
+  color: white;
+}
+
+a {
+  color: #f2f2f2
+}
+
+a:hover {
+  color: #d6d6d6
+}
+
+@media only screen and (max-width: 768px) {
+
+  .course,
+  .school {
+    display: block;
+  }
+
+  .course .title,
+  .course .descrition,
+  .school .title,
+  .school .description {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+}

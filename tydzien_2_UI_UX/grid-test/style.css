@@ -1,0 +1,91 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 20% 1fr 20%;
+  grid-template-columns: 20% 1fr 20%;
+  grid-gap: 0;
+  height: 100vh;
+  margin: 0;
+  }
+
+header, footer, article, nav, div {
+  padding: 20px;
+}
+
+#pageHeader {
+  display: grid;
+  grid-area: header;
+  background: #8254b0;
+  color: #fff2d6;
+  letter-spacing: 0.2em;
+  word-spacing: 0.2em;
+  font-size: 30px;
+  align-items: center;
+  justify-items: center;
+}
+#pageFooter {
+  grid-area: footer;
+  background: #8254b0;
+  color: #fff2d6;
+  text-align: center;
+  font-size: 16px;
+}
+#pageFooter a {
+  color: #a6a6a6;
+}
+
+#mainArticle { 
+  grid-area: article;  
+  background-color: #fff2d6;
+  font-size: 22px;
+  line-height: 1.5em;
+  }
+
+#mainNav { 
+  grid-area: nav; 
+  background: #ddb1f2;
+  }
+
+#mainNav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+#mainNav li {
+  padding: 20px 5px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: bold;
+}
+
+#mainNav a {
+  text-decoration: none;
+  color: #8254b0;
+}
+
+#siteLinks { 
+  grid-area: ads; 
+  background: #ddb1f2;
+  }
+
+#siteLinks ul {
+  list-style: none;
+  padding: 20px;
+}
+
+#siteLinks li {
+  padding: 20px 5px;
+  text-align: left;
+}
+
+#siteLinks a {
+  text-decoration: none;
+  color: #8254b0;
+}
+
+img {
+  width: 25px;
+}
