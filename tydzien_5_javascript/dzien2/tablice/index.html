@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Warsztaty z JSa!</title>
+</head>
+
+<body>
+  <input type="text" id="noweImie" placeholder="Podaj nowe imię" />
+  <button id="przyciskDodajImie">Dodaj imię</button>
+  <div id="liczbaImion"></div>
+  <div id="listaImion"></div>
+</body>
+<script>
+  let imiona = [];
+
+  function dodajImie() {
+    let imie = document.getElementById("noweImie").value;
+    if (imie !== '') {
+      imiona.push(imie);
+    }
+
+    document.getElementById("listaImion").innerText = "Imiona to:" + imiona.join(", ") + ".";
+    if (imiona.length === 1) {
+      document.getElementById("liczbaImion").innerText = "Na liście mamy 1 imię.";
+    } else {
+      document.getElementById("liczbaImion").innerText = "Na liście mamy " + imiona.length + " imion.";
+    }
+
+  }
+
+  document.getElementById("przyciskDodajImie").onclick = dodajImie;
+</script>
+
+</html>

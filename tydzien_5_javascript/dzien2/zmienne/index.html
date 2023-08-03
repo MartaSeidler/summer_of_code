@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Warsztaty z JSa!</title>
+  </head>
+  <body>
+    <button id="przyciskPrzyjdz">Przyjdź</button>
+    <button id="przyciskOdejdz">Odejdź</button>
+    <button id="przyciskPowiedzCos">Powiedz coś</button>
+    <button id="przyciskZostan">Zostań</button>
+    <input type="text" id="inputZImieniem" placeholder="Podaj swoje imię" />
+    <pre id="okno"></pre>
+  </body>
+  <script>
+    let wiadomosc = "Nie wiem, gdzie jesteś!";
+
+    function przyjdz() {
+      let imie = document.getElementById('inputZImieniem').value;
+      if (imie == '') {
+        wiadomosc = "Witaj, tajemniczy nieznajomy! Jak masz na imię?";
+      } else {
+        wiadomosc = 'Witaj, '+imie+'!';
+      }
+    }
+
+    function odejdz() {
+      let imie = document.getElementById('inputZImieniem').value;
+      if (imie == '') {
+        wiadomosc = 'Szerokiej drogi, tajemniczy nieznajomy!';
+      } else {
+        wiadomosc = 'Szerokiej drogi, '+imie+'!';
+      }
+    }
+
+    function zostan(){
+      wiadomosc = "Rozgość się";
+    }
+
+    function powiedzCos() {
+      document.getElementById("okno").innerText = wiadomosc;
+    }
+
+    document.getElementById("przyciskPowiedzCos").onclick = powiedzCos;
+    document.getElementById("przyciskPrzyjdz").onclick = przyjdz;
+    document.getElementById("przyciskOdejdz").onclick = odejdz;
+    document.getElementById("przyciskZostan").onclick = zostan;
+  </script>
+</html>
